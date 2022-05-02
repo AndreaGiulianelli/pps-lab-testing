@@ -51,6 +51,10 @@ dependencies {
 
     testRuntimeOnly("org.slf4j:slf4j-log4j12:1.7.26")
 }
+java {
+    sourceCompatibility = JavaVersion.VERSION_16
+    targetCompatibility = JavaVersion.VERSION_16
+}
 
 /*
 tasks.withType<ScalaCompile> {
