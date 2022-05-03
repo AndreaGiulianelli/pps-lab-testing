@@ -1,4 +1,4 @@
-package testLab.es3
+package tLab.es3
 
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.freespec.AnyFreeSpec
