@@ -1,9 +1,10 @@
-package testLab
+package testLab.es3
 
-import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.freespec.AnyFreeSpec
+import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.should.Matchers
+import testLab.{BasicCart, BasicCatalog, BasicWarehouse, Price, Product}
 
 class TestCart extends AnyFunSuite:
   test("A cart should be initially empty") {
