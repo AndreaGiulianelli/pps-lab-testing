@@ -2,9 +2,11 @@ package tLab.es6
 
 import io.cucumber.scala.{EN, ScalaDsl}
 import org.junit.jupiter.api.Assertions
-import testLab.{BasicCart, BasicCatalog, BasicLogger, BasicWarehouse, Price, Product, Shopping}
+import testLab.Price
 
 class TestShoppingSteps extends ScalaDsl with EN:
+    val p = Price(10)
+
     Given("""A shopping""") { () =>
 
     }
@@ -12,6 +14,6 @@ class TestShoppingSteps extends ScalaDsl with EN:
 
     }
     Then("""I have to pay""") { () =>
-
+        p.value == 10
     }
 
